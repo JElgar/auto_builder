@@ -1,0 +1,11 @@
+[package]
+name = "auto_builder_test_suite"
+version = "0.1.0"
+edition = "2021"
+publish = false
+
+[dependencies]
+auto_builder = { path = "../auto_builder", version = "0.1.0" }
+
+[dev-dependencies]
+trybuild = "1.0"

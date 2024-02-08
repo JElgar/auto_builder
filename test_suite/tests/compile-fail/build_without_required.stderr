@@ -1,0 +1,14 @@
+error[E0599]: no method named `build` found for struct `ABuilder<i32, i32, NoValue>` in the current scope
+  --> tests/compile-fail/build_without_required.rs:11:44
+   |
+4  |     #[derive(Builder)]
+   |              ------- method `build` not found for this struct
+...
+11 |     let a = A::builder().set_x(1).set_y(2).build();
+   |             ------------ --------          ^^^^^ method not found in `ABuilder<i32, i32, NoValue>`
+   |             |            |
+   |             |            method `build` is available on `ABuilder<i32, NoValue, NoValue>`
+   |             method `build` is available on `ABuilder<NoValue, NoValue, NoValue>`
+   |
+   = note: the method was found for
+           - `ABuilder<i32, i32, String>`

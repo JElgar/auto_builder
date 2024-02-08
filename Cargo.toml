@@ -1,0 +1,7 @@
+[workspace]
+members = [
+	"auto_builder",
+	"auto_builder_derive",
+	"test_suite",
+]
+resolver = "2"

@@ -1,0 +1,12 @@
+[package]
+name = "auto_builder"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+description = "Package for generating a 'safe' builder"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+auto_builder_derive = { path = "../auto_builder_derive", version = "0.1.0" }
+darling = "0.20.5"
